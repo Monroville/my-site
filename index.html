@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
 /* === TOKENS — dark-first === */
@@ -17,7 +17,7 @@
   --fg: #EEF2FF;
   --muted: #6B7DAF;
   --subtle: rgba(148,163,220,0.08);
-  --display: 'Syne', system-ui, sans-serif;
+  --display: 'Unbounded', system-ui, sans-serif;
   --body: 'Inter', system-ui, sans-serif;
   color-scheme: dark;
 }
@@ -57,7 +57,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 @media(prefers-color-scheme:light){:root:not([data-theme="dark"]) .nav{background:rgba(245,247,255,.88)}}
 :root[data-theme="light"] .nav{background:rgba(245,247,255,.88)}
 .nav-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px max(20px,env(safe-area-inset-left,0px)) 16px max(20px,env(safe-area-inset-right,0px))}
-.logo{display:flex;align-items:center;gap:9px;font-family:var(--display);font-size:19px;font-weight:800;letter-spacing:-.02em}
+.logo{display:flex;align-items:center;gap:9px;font-family:var(--display);font-size:16px;font-weight:800;letter-spacing:-.02em}
 .logo-mark{width:26px;height:26px;background:var(--accent);border-radius:7px;flex-shrink:0;position:relative}
 .logo-mark::after{content:'';position:absolute;inset:5px 4px 4px 10px;background:var(--bg);border-radius:3px}
 @media(prefers-color-scheme:light){:root:not([data-theme="dark"]) .logo-mark::after{background:#F5F7FF}}
@@ -100,7 +100,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .eye-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 2s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.75)}}
 .eye-txt{font-size:12px;font-weight:600;color:var(--accent);letter-spacing:.05em}
-h1{font-family:var(--display);font-size:clamp(38px,5vw,66px);font-weight:800;line-height:1.08;letter-spacing:-.03em;text-wrap:balance;margin-bottom:22px}
+h1{font-family:var(--display);font-size:clamp(28px,4vw,54px);font-weight:800;line-height:1.12;letter-spacing:-.02em;text-wrap:balance;margin-bottom:22px}
 h1 .hl{color:var(--accent)}
 .hero-desc{font-size:17px;line-height:1.72;color:var(--muted);max-width:460px;margin-bottom:34px}
 .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
@@ -119,13 +119,13 @@ h1 .hl{color:var(--accent)}
 .m-chart{background:var(--card);border:1px solid var(--border);border-radius:9px;padding:14px}
 .m-chart-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
 .m-chart-lbl{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.m-chart-val{font-family:var(--display);font-size:20px;font-weight:700}
+.m-chart-val{font-family:var(--display);font-size:18px;font-weight:700}
 .m-bars{display:flex;align-items:flex-end;gap:5px;height:52px}
 .m-bar-c{flex:1;border-radius:3px 3px 0 0;background:var(--subtle)}
 .m-bar-c.hi{background:var(--accent);opacity:.8}
 .m-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
 .m-stat{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px}
-.m-stat-n{font-family:var(--display);font-size:16px;font-weight:700;margin-bottom:1px}
+.m-stat-n{font-family:var(--display);font-size:14px;font-weight:700;margin-bottom:1px}
 .m-stat-n.ac{color:var(--accent)}
 .m-stat-l{font-size:9px;color:var(--muted);letter-spacing:.04em}
 .m-row{display:flex;gap:10px;align-items:center}
@@ -151,13 +151,13 @@ h1 .hl{color:var(--accent)}
 .logos{padding-block:40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .logos-lbl{text-align:center;font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
 .logos-row{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
-.logo-co{font-family:var(--display);font-size:14px;font-weight:700;color:var(--border);letter-spacing:-.01em;transition:color .2s;user-select:none}
+.logo-co{font-family:var(--display);font-size:12px;font-weight:700;color:var(--border);letter-spacing:-.01em;transition:color .2s;user-select:none}
 
 /* SHARED SECTION */
 .sec{padding-block:88px}
 .sec-hd{text-align:center;max-width:580px;margin:0 auto 56px}
-.sec-label{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
-h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;letter-spacing:-.025em;line-height:1.15;text-wrap:balance;margin-block:10px 14px}
+.sec-label{font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+h2{font-family:var(--display);font-size:clamp(22px,3vw,36px);font-weight:800;letter-spacing:-.02em;line-height:1.2;text-wrap:balance;margin-block:10px 14px}
 .sec-desc{font-size:15px;line-height:1.72;color:var(--muted)}
 
 /* SERVICES */
@@ -166,7 +166,7 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 .svc-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px;transition:border-color .2s,transform .2s}
 .svc-card:hover{border-color:var(--accent);transform:translateY(-4px)}
 .svc-ico{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;font-size:20px;margin-bottom:18px}
-.svc-card h3{font-family:var(--display);font-size:16px;font-weight:700;margin-bottom:9px}
+.svc-card h3{font-family:var(--display);font-size:13px;font-weight:700;margin-bottom:9px;line-height:1.35}
 .svc-card p{font-size:13px;line-height:1.65;color:var(--muted)}
 .svc-link{display:inline-flex;align-items:center;gap:5px;margin-top:14px;font-size:12px;font-weight:600;color:var(--accent);transition:gap .2s}
 .svc-link:hover{gap:9px}
@@ -178,8 +178,8 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 .proc-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:32px 28px;position:relative;overflow:hidden;transition:border-color .2s}
 .proc-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--accent-dim),transparent 60%);opacity:0;transition:opacity .2s}
 .proc-card:hover::before{opacity:1}
-.step-n{font-family:var(--display);font-size:52px;font-weight:800;color:var(--border);line-height:1;margin-bottom:18px;letter-spacing:-.04em}
-.proc-card h3{font-family:var(--display);font-size:18px;font-weight:700;margin-bottom:10px;position:relative}
+.step-n{font-family:var(--display);font-size:48px;font-weight:800;color:var(--border);line-height:1;margin-bottom:18px;letter-spacing:-.04em}
+.proc-card h3{font-family:var(--display);font-size:14px;font-weight:700;margin-bottom:10px;position:relative;line-height:1.35}
 .proc-card p{font-size:14px;line-height:1.68;color:var(--muted);position:relative}
 @media(max-width:768px){.proc-grid{grid-template-columns:1fr}}
 
@@ -188,7 +188,7 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:18px;overflow:hidden}
 .stat{background:var(--card);padding:36px 28px;text-align:center;transition:background .2s}
 .stat:hover{background:var(--surface)}
-.stat-n{font-family:var(--display);font-size:clamp(32px,4vw,50px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:7px;font-variant-numeric:tabular-nums}
+.stat-n{font-family:var(--display);font-size:clamp(28px,3.5vw,46px);font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:7px;font-variant-numeric:tabular-nums}
 .stat-n sup{font-size:.45em;color:var(--accent);vertical-align:super}
 .stat-l{font-size:13px;color:var(--muted)}
 @media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
@@ -203,7 +203,7 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 .work-card:hover .wc-vis{transform:scale(1.04)}
 .wc-info{position:absolute;bottom:0;left:0;right:0;padding:18px 22px;background:linear-gradient(to top,rgba(7,9,15,.88) 50%,transparent)}
 .wc-tag{font-size:10px;font-weight:700;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
-.wc-title{font-family:var(--display);font-size:15px;font-weight:700;color:#EEF2FF}
+.wc-title{font-family:var(--display);font-size:13px;font-weight:700;color:#EEF2FF;line-height:1.35}
 @media(max-width:620px){
   .work-grid{grid-template-columns:1fr}
   .work-card:first-child{grid-row:span 1}
@@ -228,9 +228,9 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 .pc{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;position:relative;transition:border-color .2s}
 .pc:hover:not(.pc-feat){border-color:var(--muted)}
 .pc-feat{background:var(--card);border-color:var(--accent);transform:scale(1.03)}
-.feat-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--accent);color:#07090F;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 12px;border-radius:100px}
-.pc-plan{font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.pc-price{font-family:var(--display);font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:3px;font-variant-numeric:tabular-nums}
+.feat-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--accent);color:#07090F;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 12px;border-radius:100px;white-space:nowrap}
+.pc-plan{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.pc-price{font-family:var(--display);font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1;margin-bottom:3px;font-variant-numeric:tabular-nums}
 .pc-price sup{font-size:.4em;vertical-align:super;color:var(--muted)}
 .pc-period{font-size:12px;color:var(--muted);margin-bottom:20px}
 .pc-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
@@ -268,7 +268,7 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 .foot-socials{display:flex;gap:8px}
 .soc{width:34px;height:34px;border-radius:8px;border:1px solid var(--border);display:grid;place-items:center;font-size:13px;color:var(--muted);transition:all .2s}
 .soc:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-dim)}
-.foot-col h4{font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.foot-col h4{font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
 .foot-col ul{display:flex;flex-direction:column;gap:9px}
 .foot-col a{font-size:13px;color:var(--muted);transition:color .2s}
 .foot-col a:hover{color:var(--fg)}
@@ -286,16 +286,16 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
   <div class="nav-inner">
     <a href="#" class="logo"><div class="logo-mark"></div>Forma</a>
     <ul class="nav-links" id="nl">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#work">Работы</a></li>
+      <li><a href="#pricing">Цены</a></li>
+      <li><a href="#faq">Вопросы</a></li>
     </ul>
     <div class="nav-end" id="ne">
-      <a href="#" class="btn btn-ghost">Log in</a>
-      <a href="#" class="btn btn-pri">Get started →</a>
+      <a href="#" class="btn btn-ghost">Войти</a>
+      <a href="#" class="btn btn-pri">Начать →</a>
     </div>
-    <button class="ham" id="hm" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <button class="ham" id="hm" aria-label="Открыть меню"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -308,22 +308,24 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
       <div>
         <div class="eyebrow">
           <div class="eye-dot"></div>
-          <span class="eye-txt">Now in public beta</span>
+          <span class="eye-txt">Открытая бета</span>
         </div>
-        <h1>Build digital products<br><span class="hl">that people love</span></h1>
-        <p class="hero-desc">We design and develop high-performance websites, apps, and brand identities for startups and enterprises ready to stand out.</p>
+        <h1>Создаём цифровые<br>продукты, <span class="hl">которые любят</span></h1>
+        <p class="hero-desc">
+          Разрабатываем высокопроизводительные сайты, приложения и фирменные стили для стартапов и компаний, готовых выделиться на рынке.
+        </p>
         <div class="hero-actions">
-          <a href="#work" class="btn btn-pri btn-lg">View our work →</a>
-          <a href="#pricing" class="btn btn-out btn-lg">See pricing</a>
+          <a href="#work" class="btn btn-pri btn-lg">Смотреть работы →</a>
+          <a href="#pricing" class="btn btn-out btn-lg">Цены</a>
         </div>
         <div class="social-proof">
           <div class="avatars">
-            <div class="av" style="background:#3BFFA0">A</div>
-            <div class="av" style="background:#A78BFA">M</div>
-            <div class="av" style="background:#60A5FA">K</div>
-            <div class="av" style="background:#F472B6">S</div>
+            <div class="av" style="background:#3BFFA0">А</div>
+            <div class="av" style="background:#A78BFA">М</div>
+            <div class="av" style="background:#60A5FA">К</div>
+            <div class="av" style="background:#F472B6">С</div>
           </div>
-          <span class="sp-txt">Trusted by 400+ teams worldwide</span>
+          <span class="sp-txt">Нам доверяют 400+ команд по всему миру</span>
         </div>
       </div>
       <div class="hero-visual">
@@ -336,8 +338,8 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
           <div class="m-body">
             <div class="m-chart">
               <div class="m-chart-h">
-                <span class="m-chart-lbl">Monthly Revenue</span>
-                <span class="m-chart-val">$84.2k</span>
+                <span class="m-chart-lbl">Выручка за месяц</span>
+                <span class="m-chart-val">₽8,4 млн</span>
               </div>
               <div class="m-bars">
                 <div class="m-bar-c" style="height:38%"></div>
@@ -350,8 +352,8 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
               </div>
             </div>
             <div class="m-stats">
-              <div class="m-stat"><div class="m-stat-n ac">+42%</div><div class="m-stat-l">Conversion</div></div>
-              <div class="m-stat"><div class="m-stat-n">2.4s</div><div class="m-stat-l">Load time</div></div>
+              <div class="m-stat"><div class="m-stat-n ac">+42%</div><div class="m-stat-l">Конверсия</div></div>
+              <div class="m-stat"><div class="m-stat-n">2.4с</div><div class="m-stat-l">Загрузка</div></div>
               <div class="m-stat"><div class="m-stat-n">98</div><div class="m-stat-l">Perf score</div></div>
             </div>
             <div class="m-row">
@@ -362,11 +364,11 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
         </div>
         <div class="float f1">
           <div class="fi fi-g">✦</div>
-          <div><div>New project live</div><div class="f-sub">Deployment successful</div></div>
+          <div><div>Проект запущен</div><div class="f-sub">Деплой прошёл успешно</div></div>
         </div>
         <div class="float f2">
           <div class="fi fi-v">◆</div>
-          <div><div>+127% traffic</div><div class="f-sub">vs last month</div></div>
+          <div><div>+127% трафика</div><div class="f-sub">к прошлому месяцу</div></div>
         </div>
       </div>
     </div>
@@ -376,14 +378,14 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <!-- LOGOS -->
 <section class="logos">
   <div class="wrap">
-    <p class="logos-lbl">Trusted by teams at</p>
+    <p class="logos-lbl">Нам доверяют команды из</p>
     <div class="logos-row">
-      <span class="logo-co">Vercel</span>
-      <span class="logo-co">Stripe</span>
-      <span class="logo-co">Linear</span>
-      <span class="logo-co">Notion</span>
-      <span class="logo-co">Figma</span>
-      <span class="logo-co">Raycast</span>
+      <span class="logo-co">Сбер</span>
+      <span class="logo-co">Яндекс</span>
+      <span class="logo-co">Ozon</span>
+      <span class="logo-co">Авито</span>
+      <span class="logo-co">VK</span>
+      <span class="logo-co">Тинькофф</span>
     </div>
   </div>
 </section>
@@ -392,15 +394,35 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec services" id="services">
   <div class="wrap">
     <div class="sec-hd fu">
-      <span class="sec-label">What we do</span>
-      <h2>Every layer of the digital stack</h2>
-      <p class="sec-desc">From brand identity to backend architecture, we handle the full lifecycle of your digital product.</p>
+      <span class="sec-label">Что мы делаем</span>
+      <h2>Весь цифровой стек под одной крышей</h2>
+      <p class="sec-desc">От фирменного стиля до серверной архитектуры — мы ведём цифровой продукт на каждом этапе жизненного цикла.</p>
     </div>
     <div class="svc-grid">
-      <div class="svc-card fu"><div class="svc-ico" style="background:rgba(59,255,160,.12)">🎨</div><h3>UI / UX Design</h3><p>Interfaces that feel intuitive on first use. Figma systems built for real products, not portfolios.</p><span class="svc-link">Explore →</span></div>
-      <div class="svc-card fu"><div class="svc-ico" style="background:rgba(96,165,250,.12)">⚡</div><h3>Web Development</h3><p>Performance-first development with Next.js and React. 95+ Lighthouse score by default.</p><span class="svc-link">Explore →</span></div>
-      <div class="svc-card fu"><div class="svc-ico" style="background:rgba(167,139,250,.12)">◉</div><h3>Brand Identity</h3><p>Strategy, naming, logo, and visual language that scales from favicon to billboard.</p><span class="svc-link">Explore →</span></div>
-      <div class="svc-card fu"><div class="svc-ico" style="background:rgba(244,114,182,.12)">📈</div><h3>Growth & CRO</h3><p>A/B testing, conversion analysis, and optimization loops that compound over time.</p><span class="svc-link">Explore →</span></div>
+      <div class="svc-card fu">
+        <div class="svc-ico" style="background:rgba(59,255,160,.12)">🎨</div>
+        <h3>UI / UX Дизайн</h3>
+        <p>Интерфейсы, которые понятны с первого касания. Figma-системы для реальных продуктов, а не для портфолио.</p>
+        <span class="svc-link">Подробнее →</span>
+      </div>
+      <div class="svc-card fu">
+        <div class="svc-ico" style="background:rgba(96,165,250,.12)">⚡</div>
+        <h3>Веб-разработка</h3>
+        <p>Производительный фронтенд на Next.js и React. Lighthouse 95+ по умолчанию, без компромиссов.</p>
+        <span class="svc-link">Подробнее →</span>
+      </div>
+      <div class="svc-card fu">
+        <div class="svc-ico" style="background:rgba(167,139,250,.12)">◉</div>
+        <h3>Брендинг</h3>
+        <p>Стратегия, нейминг, логотип и визуальный язык — от фавикона до наружной рекламы.</p>
+        <span class="svc-link">Подробнее →</span>
+      </div>
+      <div class="svc-card fu">
+        <div class="svc-ico" style="background:rgba(244,114,182,.12)">📈</div>
+        <h3>Рост и CRO</h3>
+        <p>A/B тесты, анализ конверсии и циклы оптимизации, которые дают накопительный результат.</p>
+        <span class="svc-link">Подробнее →</span>
+      </div>
     </div>
   </div>
 </section>
@@ -409,14 +431,26 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec" id="process">
   <div class="wrap">
     <div class="sec-hd fu">
-      <span class="sec-label">How we work</span>
-      <h2>From brief to live in three phases</h2>
-      <p class="sec-desc">A repeatable system refined over 200+ projects, so you always know what comes next.</p>
+      <span class="sec-label">Как мы работаем</span>
+      <h2>От брифа до запуска в три этапа</h2>
+      <p class="sec-desc">Повторяемая система, отточенная на 200+ проектах, — вы всегда знаете, что будет дальше.</p>
     </div>
     <div class="proc-grid">
-      <div class="proc-card fu"><div class="step-n">01</div><h3>🔍 Discover & Define</h3><p>We dig into your users, competitors, and business model. The output is a sharp brief that makes every later decision obvious.</p></div>
-      <div class="proc-card fu"><div class="step-n">02</div><h3>✦ Design & Prototype</h3><p>High-fidelity designs and interactive prototypes in Figma before a single line of code is written. Iterate fast, cheaply.</p></div>
-      <div class="proc-card fu"><div class="step-n">03</div><h3>🚀 Build & Launch</h3><p>Production-grade code, CI/CD pipelines, and a launch your team can operate independently after handoff.</p></div>
+      <div class="proc-card fu">
+        <div class="step-n">01</div>
+        <h3>🔍 Исследование и стратегия</h3>
+        <p>Погружаемся в ваших пользователей, конкурентов и бизнес-модель. Результат — чёткий бриф, делающий каждое следующее решение очевидным.</p>
+      </div>
+      <div class="proc-card fu">
+        <div class="step-n">02</div>
+        <h3>✦ Дизайн и прототип</h3>
+        <p>Высокодетальный дизайн и интерактивный прототип в Figma — до того, как написана первая строчка кода. Быстрые и дешёвые итерации.</p>
+      </div>
+      <div class="proc-card fu">
+        <div class="step-n">03</div>
+        <h3>🚀 Разработка и запуск</h3>
+        <p>Код уровня production, CI/CD-пайплайны и запуск, после которого ваша команда может работать независимо.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -425,10 +459,10 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec stats">
   <div class="wrap">
     <div class="stats-grid fu">
-      <div class="stat"><div class="stat-n" data-target="240" data-suf="+">0<sup>+</sup></div><div class="stat-l">Projects delivered</div></div>
-      <div class="stat"><div class="stat-n" data-target="98" data-suf="%">0<sup>%</sup></div><div class="stat-l">Client satisfaction</div></div>
-      <div class="stat"><div class="stat-n" data-target="4" data-suf="×">0<sup>×</sup></div><div class="stat-l">Average ROI lift</div></div>
-      <div class="stat"><div class="stat-n" data-target="12" data-suf="yr">0<sup>yr</sup></div><div class="stat-l">In the industry</div></div>
+      <div class="stat"><div class="stat-n" data-target="240" data-suf="+">0<sup>+</sup></div><div class="stat-l">Проектов сдано</div></div>
+      <div class="stat"><div class="stat-n" data-target="98" data-suf="%">0<sup>%</sup></div><div class="stat-l">Довольных клиентов</div></div>
+      <div class="stat"><div class="stat-n" data-target="4" data-suf="×">0<sup>×</sup></div><div class="stat-l">Средний рост ROI</div></div>
+      <div class="stat"><div class="stat-n" data-target="12" data-suf="лет">0<sup>лет</sup></div><div class="stat-l">На рынке</div></div>
     </div>
   </div>
 </section>
@@ -437,22 +471,22 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec" id="work">
   <div class="wrap">
     <div class="sec-hd fu">
-      <span class="sec-label">Selected work</span>
-      <h2>Projects we're proud of</h2>
-      <p class="sec-desc">A sample from 240 projects across SaaS, fintech, e-commerce, and consumer apps.</p>
+      <span class="sec-label">Избранные работы</span>
+      <h2>Проекты, которыми мы гордимся</h2>
+      <p class="sec-desc">Выборка из 240 проектов в SaaS, финтехе, e-commerce и потребительских приложениях.</p>
     </div>
     <div class="work-grid fu">
       <div class="work-card">
         <div class="wc-vis" style="background:linear-gradient(135deg,#0D2137,#0A3D2A)">◉</div>
-        <div class="wc-info"><div class="wc-tag">SaaS · Fintech</div><div class="wc-title">Meridian — B2B Payments Platform</div></div>
+        <div class="wc-info"><div class="wc-tag">SaaS · Финтех</div><div class="wc-title">Меридиан — платёжная B2B-платформа</div></div>
       </div>
       <div class="work-card">
         <div class="wc-vis" style="background:linear-gradient(135deg,#1A0D37,#2D0A3D)">✦</div>
-        <div class="wc-info"><div class="wc-tag">Brand · Identity</div><div class="wc-title">Aura — Wellness Brand</div></div>
+        <div class="wc-info"><div class="wc-tag">Бренд · Айдентика</div><div class="wc-title">Aura — бренд в сфере велнеса</div></div>
       </div>
       <div class="work-card">
         <div class="wc-vis" style="background:linear-gradient(135deg,#0D1A37,#0A2740)">⬡</div>
-        <div class="wc-info"><div class="wc-tag">E-commerce · Web</div><div class="wc-title">Lumex — DTC Hardware Store</div></div>
+        <div class="wc-info"><div class="wc-tag">E-commerce · Веб</div><div class="wc-title">Lumex — DTC-магазин электроники</div></div>
       </div>
     </div>
   </div>
@@ -462,25 +496,25 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec testi">
   <div class="wrap">
     <div class="sec-hd fu">
-      <span class="sec-label">Testimonials</span>
-      <h2>What our clients say</h2>
-      <p class="sec-desc">Don't take our word for it — here's what people who've worked with us think.</p>
+      <span class="sec-label">Отзывы</span>
+      <h2>Что говорят наши клиенты</h2>
+      <p class="sec-desc">Не верьте нам на слово — вот что думают те, кто с нами работал.</p>
     </div>
     <div class="testi-grid fu">
       <div class="tc">
         <div class="stars">★★★★★</div>
-        <p class="tc-q">"Forma took our scrappy MVP and turned it into something we're genuinely proud to show investors. The attention to detail in every interaction is remarkable."</p>
-        <div class="tc-auth"><div class="tc-av" style="background:#3BFFA0">JK</div><div><div class="tc-name">James Kim</div><div class="tc-role">CEO, Meridian</div></div></div>
+        <p class="tc-q">«Forma взяла наш сырой MVP и превратила его в то, чем мы по-настоящему гордимся перед инвесторами. Внимание к деталям в каждом взаимодействии поражает.»</p>
+        <div class="tc-auth"><div class="tc-av" style="background:#3BFFA0">ДК</div><div><div class="tc-name">Дмитрий Ким</div><div class="tc-role">CEO, Меридиан</div></div></div>
       </div>
       <div class="tc">
         <div class="stars">★★★★★</div>
-        <p class="tc-q">"The rebrand completely transformed how customers perceive us. We saw a 34% jump in inbound leads within two months of launching the new site."</p>
-        <div class="tc-auth"><div class="tc-av" style="background:#A78BFA">SL</div><div><div class="tc-name">Sofia Lund</div><div class="tc-role">CMO, Aura</div></div></div>
+        <p class="tc-q">«Ребрендинг полностью изменил восприятие нас клиентами. В течение двух месяцев после запуска нового сайта входящих лидов стало на 34% больше.»</p>
+        <div class="tc-auth"><div class="tc-av" style="background:#A78BFA">СЛ</div><div><div class="tc-name">София Лунд</div><div class="tc-role">CMO, Aura</div></div></div>
       </div>
       <div class="tc">
         <div class="stars">★★★★★</div>
-        <p class="tc-q">"Working with Forma felt like having an in-house product team. They anticipated problems before we did and always came with solutions."</p>
-        <div class="tc-auth"><div class="tc-av" style="background:#60A5FA">MT</div><div><div class="tc-name">Marcus Thorne</div><div class="tc-role">CTO, Lumex</div></div></div>
+        <p class="tc-q">«Работа с Forma ощущалась как штатная продуктовая команда. Они предвидели проблемы раньше нас и всегда приходили с решениями.»</p>
+        <div class="tc-auth"><div class="tc-av" style="background:#60A5FA">МТ</div><div><div class="tc-name">Марк Торне</div><div class="tc-role">CTO, Lumex</div></div></div>
       </div>
     </div>
   </div>
@@ -490,56 +524,56 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec" id="pricing">
   <div class="wrap">
     <div class="sec-hd fu">
-      <span class="sec-label">Pricing</span>
-      <h2>Simple, transparent plans</h2>
-      <p class="sec-desc">No hidden fees, no surprise invoices. Pick the engagement model that fits your stage.</p>
+      <span class="sec-label">Цены</span>
+      <h2>Простые и прозрачные тарифы</h2>
+      <p class="sec-desc">Никаких скрытых платежей и неожиданных счетов. Выберите формат сотрудничества под ваш этап.</p>
     </div>
     <div class="price-grid fu">
       <div class="pc">
-        <div class="pc-plan">Starter</div>
-        <div class="pc-price"><sup>$</sup>4,800</div>
-        <div class="pc-period">one-time project</div>
-        <div class="pc-desc">For startups and small teams launching a first product or refreshing an existing one.</div>
+        <div class="pc-plan">Старт</div>
+        <div class="pc-price"><sup>₽</sup>480 000</div>
+        <div class="pc-period">разовый проект</div>
+        <div class="pc-desc">Для стартапов и небольших команд, запускающих первый продукт или обновляющих существующий.</div>
         <ul class="pc-feats">
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Up to 8 pages / screens</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Figma design system</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Next.js implementation</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>2 revision rounds</li>
-          <li class="pc-feat-row"><div class="chk chk-n">×</div><span style="color:var(--muted)">Brand strategy</span></li>
-          <li class="pc-feat-row"><div class="chk chk-n">×</div><span style="color:var(--muted)">Ongoing retainer</span></li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>До 8 страниц / экранов</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Дизайн-система в Figma</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Вёрстка на Next.js</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>2 круга правок</li>
+          <li class="pc-feat-row"><div class="chk chk-n">×</div><span style="color:var(--muted)">Брендинг и стратегия</span></li>
+          <li class="pc-feat-row"><div class="chk chk-n">×</div><span style="color:var(--muted)">Постоянное сопровождение</span></li>
         </ul>
-        <a href="#" class="btn btn-out btn-full">Get started</a>
+        <a href="#" class="btn btn-out btn-full">Начать</a>
       </div>
       <div class="pc pc-feat">
-        <div class="feat-badge">Most popular</div>
-        <div class="pc-plan">Growth</div>
-        <div class="pc-price"><sup>$</sup>12,000</div>
-        <div class="pc-period">one-time project</div>
-        <div class="pc-desc">For companies ready to invest in a product that will carry them through the next phase.</div>
+        <div class="feat-badge">Популярный</div>
+        <div class="pc-plan">Рост</div>
+        <div class="pc-price"><sup>₽</sup>1 200 000</div>
+        <div class="pc-period">разовый проект</div>
+        <div class="pc-desc">Для компаний, готовых вложиться в продукт, который выдержит следующий этап развития.</div>
         <ul class="pc-feats">
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Unlimited pages</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Full design system</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Неограниченное кол-во страниц</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Полная дизайн-система</li>
           <li class="pc-feat-row"><div class="chk chk-y">✓</div>Next.js + CMS</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Unlimited revisions</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Brand strategy session</li>
-          <li class="pc-feat-row"><div class="chk chk-n">×</div><span style="color:var(--muted)">Ongoing retainer</span></li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Неограниченные правки</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Сессия по брендингу</li>
+          <li class="pc-feat-row"><div class="chk chk-n">×</div><span style="color:var(--muted)">Постоянное сопровождение</span></li>
         </ul>
-        <a href="#" class="btn btn-pri btn-full">Get started →</a>
+        <a href="#" class="btn btn-pri btn-full">Начать →</a>
       </div>
       <div class="pc">
-        <div class="pc-plan">Partner</div>
-        <div class="pc-price"><sup>$</sup>6,000</div>
-        <div class="pc-period">per month</div>
-        <div class="pc-desc">For companies that need a dedicated design and development team on retainer.</div>
+        <div class="pc-plan">Партнёр</div>
+        <div class="pc-price"><sup>₽</sup>600 000</div>
+        <div class="pc-period">в месяц</div>
+        <div class="pc-desc">Для компаний, которым нужна выделенная команда дизайна и разработки на постоянной основе.</div>
         <ul class="pc-feats">
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Dedicated team</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>40 hrs / month</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Priority response</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Unlimited requests</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Brand strategy session</li>
-          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Monthly retainer</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Выделенная команда</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>40 часов в месяц</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Приоритетный ответ</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Неограниченные задачи</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Сессия по брендингу</li>
+          <li class="pc-feat-row"><div class="chk chk-y">✓</div>Ежемесячный ретейнер</li>
         </ul>
-        <a href="#" class="btn btn-out btn-full">Talk to us</a>
+        <a href="#" class="btn btn-out btn-full">Обсудить</a>
       </div>
     </div>
   </div>
@@ -549,30 +583,30 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
 <section class="sec faq-sec" id="faq">
   <div class="wrap">
     <div class="sec-hd fu">
-      <span class="sec-label">FAQ</span>
-      <h2>Common questions</h2>
-      <p class="sec-desc">Everything you need to know before getting started. Can't find what you're looking for? Just ask.</p>
+      <span class="sec-label">Вопросы и ответы</span>
+      <h2>Частые вопросы</h2>
+      <p class="sec-desc">Всё, что нужно знать перед стартом. Не нашли ответ? Просто напишите нам.</p>
     </div>
     <div class="faq-list fu">
       <div class="fq open">
-        <button class="fq-q">How long does a typical project take?<div class="fq-chv">▾</div></button>
-        <div class="fq-a"><div class="fq-a-in">Starter projects typically ship in 4–6 weeks from kickoff. Growth projects run 8–12 weeks. Timeline depends on scope, revision cycles, and your team's availability for feedback. We'll give you a precise estimate in the initial scoping call.</div></div>
+        <button class="fq-q">Сколько времени занимает типичный проект?<div class="fq-chv">▾</div></button>
+        <div class="fq-a"><div class="fq-a-in">Проекты на тарифе «Старт» обычно сдаются за 4–6 недель с момента кикоффа. «Рост» — за 8–12 недель. Сроки зависят от объёма, раундов правок и скорости обратной связи с вашей стороны. Точный дедлайн назовём на вводном созвоне.</div></div>
       </div>
       <div class="fq">
-        <button class="fq-q">Do you work with early-stage startups?<div class="fq-chv">▾</div></button>
-        <div class="fq-a"><div class="fq-a-in">Yes — many of our best long-term partnerships started at the seed stage. We've built products that went on to raise Series A and B rounds. If budget is a constraint, the Starter plan is designed exactly for this stage.</div></div>
+        <button class="fq-q">Вы работаете с ранними стартапами?<div class="fq-chv">▾</div></button>
+        <div class="fq-a"><div class="fq-a-in">Да — многие наши лучшие долгосрочные партнёрства начинались на посевной стадии. Мы создавали продукты, которые затем привлекали раунды A и B. Если бюджет ограничен, тариф «Старт» создан именно для этого этапа.</div></div>
       </div>
       <div class="fq">
-        <button class="fq-q">What does the handoff look like?<div class="fq-chv">▾</div></button>
-        <div class="fq-a"><div class="fq-a-in">You get a fully documented Figma file, clean Git history, a component library with usage docs, and a 90-minute walkthrough with your team. We write code as if someone else will maintain it — because they will.</div></div>
+        <button class="fq-q">Как происходит передача проекта?<div class="fq-chv">▾</div></button>
+        <div class="fq-a"><div class="fq-a-in">Вы получаете полностью документированный Figma-файл, чистую Git-историю, библиотеку компонентов с описанием и 90-минутный онбординг вашей команды. Мы пишем код так, будто его будет поддерживать кто-то другой — потому что так и будет.</div></div>
       </div>
       <div class="fq">
-        <button class="fq-q">Can we continue working together after launch?<div class="fq-chv">▾</div></button>
-        <div class="fq-a"><div class="fq-a-in">Absolutely. Many project clients convert to our Partner retainer after launch. You can also buy ad-hoc sprint packages if the monthly retainer isn't the right fit at this point.</div></div>
+        <button class="fq-q">Можно ли продолжить сотрудничество после запуска?<div class="fq-chv">▾</div></button>
+        <div class="fq-a"><div class="fq-a-in">Конечно. Многие клиенты с разовых проектов переходят на ретейнер «Партнёр» после запуска. Если ежемесячная оплата сейчас неудобна, можно выкупать отдельные спринты по необходимости.</div></div>
       </div>
       <div class="fq">
-        <button class="fq-q">What stack do you build on?<div class="fq-chv">▾</div></button>
-        <div class="fq-a"><div class="fq-a-in">Our default stack is Next.js (App Router), TypeScript, Tailwind, and Vercel for hosting. For CMS we use Sanity or Contentful. We adapt to your existing stack when needed — we've shipped on Rails, Django, and Laravel as well.</div></div>
+        <button class="fq-q">На каком стеке вы разрабатываете?<div class="fq-chv">▾</div></button>
+        <div class="fq-a"><div class="fq-a-in">Основной стек — Next.js (App Router), TypeScript, Tailwind и Vercel для хостинга. В качестве CMS используем Sanity или Contentful. При необходимости адаптируемся под ваш стек — мы запускали проекты и на Rails, Django, и Laravel.</div></div>
       </div>
     </div>
   </div>
@@ -583,12 +617,12 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
   <div class="cta-glow"></div>
   <div class="wrap">
     <div class="cta-in fu">
-      <span class="sec-label">Let's build</span>
-      <h2>Ready to start your project?</h2>
-      <p>Book a 30-minute intro call. We'll scope your project, answer every question, and tell you honestly if we're the right fit.</p>
+      <span class="sec-label">Начнём</span>
+      <h2>Готовы запустить проект?</h2>
+      <p>Забронируйте 30-минутный вводный звонок. Оценим проект, ответим на все вопросы и честно скажем, подходим ли мы друг другу.</p>
       <div class="cta-btns">
-        <a href="#" class="btn btn-pri btn-lg">Book a call →</a>
-        <a href="#" class="btn btn-out btn-lg">View our work</a>
+        <a href="#" class="btn btn-pri btn-lg">Забронировать звонок →</a>
+        <a href="#" class="btn btn-out btn-lg">Смотреть работы</a>
       </div>
     </div>
   </div>
@@ -600,21 +634,21 @@ h2{font-family:var(--display);font-size:clamp(26px,3.5vw,42px);font-weight:800;l
     <div class="foot-top">
       <div class="foot-brand">
         <a href="#" class="logo"><div class="logo-mark"></div>Forma</a>
-        <p>A design and development studio helping ambitious teams build digital products that last.</p>
+        <p>Студия дизайна и разработки для амбициозных команд, строящих цифровые продукты на годы вперёд.</p>
         <div class="foot-socials">
-          <a href="#" class="soc" aria-label="Twitter">𝕏</a>
-          <a href="#" class="soc" aria-label="LinkedIn">in</a>
+          <a href="#" class="soc" aria-label="Telegram">✈</a>
+          <a href="#" class="soc" aria-label="VK">ВК</a>
           <a href="#" class="soc" aria-label="GitHub">⌥</a>
-          <a href="#" class="soc" aria-label="Dribbble">◎</a>
+          <a href="#" class="soc" aria-label="Behance">Bē</a>
         </div>
       </div>
-      <div class="foot-col"><h4>Services</h4><ul><li><a href="#">UI / UX Design</a></li><li><a href="#">Web Development</a></li><li><a href="#">Brand Identity</a></li><li><a href="#">Growth & CRO</a></li></ul></div>
-      <div class="foot-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Work</a></li><li><a href="#">Journal</a></li><li><a href="#">Careers</a></li></ul></div>
-      <div class="foot-col"><h4>Legal</h4><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Cookies</a></li></ul></div>
+      <div class="foot-col"><h4>Услуги</h4><ul><li><a href="#">UI / UX Дизайн</a></li><li><a href="#">Веб-разработка</a></li><li><a href="#">Брендинг</a></li><li><a href="#">Рост и CRO</a></li></ul></div>
+      <div class="foot-col"><h4>Компания</h4><ul><li><a href="#">О нас</a></li><li><a href="#">Работы</a></li><li><a href="#">Блог</a></li><li><a href="#">Вакансии</a></li></ul></div>
+      <div class="foot-col"><h4>Документы</h4><ul><li><a href="#">Политика</a></li><li><a href="#">Договор</a></li><li><a href="#">Реквизиты</a></li></ul></div>
     </div>
     <div class="foot-bot">
-      <span>© 2024 Forma Studio. All rights reserved.</span>
-      <span>Built with ♥ in San Francisco</span>
+      <span>© 2024 Forma Studio. Все права защищены.</span>
+      <span>Сделано с ♥ в Москве</span>
     </div>
   </div>
 </footer>
@@ -657,7 +691,6 @@ document.querySelectorAll('.fq-q').forEach(btn => {
     }
   });
 });
-// Open first on load
 (function() {
   const first = document.querySelector('.fq.open .fq-a');
   if (first) first.style.maxHeight = first.scrollHeight + 'px';
